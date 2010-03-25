@@ -1,0 +1,164 @@
+a {
+	text-decoration: none;
+}
+/* Images */
+a[href$='.gif']:before,
+a[href$='.GIF']:before,
+a[href$='.jpg']:before,
+a[href$='.jpeg']:before,
+a[href$='.JPG']:before,
+a[href$='.JPEG']:before,
+a[href$='.png']:before,
+a[href$='.PNG']:before,
+a[href$='.graffle']:before,
+a[href$='.GRAFFLE']:before,
+/* Audio */
+a[href$='.mp3']:before,
+a[href$='.MP3']:before,
+/* Video */
+a[href$='.mpeg']:before,
+a[href$='.MPEG']:before,
+a[href$='.mpg']:before,
+a[href$='.MPG']:before,
+a[href$='.mov']:before,
+a[href$='.MOV']:before,
+/* Text */
+a[href$='.doc']:before,
+a[href$='.docx']:before,
+a[href$='.DOC']:before,
+a[href$='.DOCX']:before,
+a[href$='.TXT']:before,
+a[href$='.txt']:before,
+/* Spreadsheets */
+a[href$='.xls']:before,
+a[href$='.XLS']:before,
+a[href$='.csv']:before,
+a[href$='.CSV']:before,
+/* Print */
+a[href$='.pdf']:before,
+a[href$='.PDF']:before,
+/* Presenations */
+a[href$='.ppt']:before,
+a[href$='.PPT']:before,
+/* Flash */
+a[href$='.swf']:before,
+a[href$='.SWF']:before {
+	color: rgba(0,0,0,0.5);
+	margin-right: 1em;
+	-webkit-border-top-right-radius: 0.75ex;
+	-webkit-box-shadow: 1px	1px 0px #999;
+	text-shadow: 0 -1px 0 rgba(255,255,255,0.5);
+	display: block;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0)), to(#bbb), color-stop(.2,rgba(0,0,0,0)),color-stop(.2,#ededed));
+	font: bold 50%/5ex Courier, "Courier New", mono;
+	padding: 1em .25ex .5ex .5ex;
+	background-color: #9f9f9f; /* the default bg colour for txt, csv etc. */
+}
+
+/*Images*/
+a[href$='.gif']:before,
+a[href$='.GIF']:before {
+	content: "gif";
+	background-color: #2e2d80;
+	}
+
+a[href$='.jpg']:before,
+a[href$='.jpeg']:before,
+a[href$='.JPG']:before,
+a[href$='.JPEG']:before {
+	content: "jpg";
+	background-color: #7ac935;
+	}
+
+a[href$='.png']:before,
+a[href$='.PNG']:before {
+	content: "png";
+	background-color: #0065a9;
+	}
+
+a[href$='.graffle']:before,
+a[href$='.GRAFFLE']:before {
+	content: "gr…";
+	background-color: #003c41;
+	}
+
+/* Audio */
+a[href$='.mp3']:before,
+a[href$='.MP3']:before {
+	content: "mp3";
+	background-color: #41accd;
+	}
+	
+/* Video */
+a[href$='.mpeg']:before,
+a[href$='.MPEG']:before,
+a[href$='.mpg']:before,
+a[href$='.MPG']:before {
+	content: "mpg";
+	background-color: #daa800;
+	}
+a[href$='.mov']:before,
+a[href$='.MOV']:before {
+	content: "mov";
+	background-color: #0075e1;
+	}
+
+/* Text */
+a[href$='.doc']:before,
+a[href$='.docx']:before,
+a[href$='.DOC']:before,
+a[href$='.DOCX']:before {
+	content: "doc";
+	background-color: #244ab8;
+	}
+a[href$='.txt']:before,
+a[href$='.TXT']:before {
+	content: "txt";
+	}
+a[href$='.rtf']:before,
+a[href$='.RTF']:before {
+	content: "rtf";
+	}
+
+/* Spreadsheets */
+a[href$='.xls']:before,
+a[href$='.XLS']:before,
+a[href$='.xlsx']:before,
+a[href$='.XLSX']:before {
+	content: "xls";
+	background-color: #082;
+	}
+	
+a[href$='.csv']:before,
+a[href$='.CSV']:before {
+	content: "csv";
+	}
+
+/* Print */
+a[href$='.pdf']:before,
+a[href$='.PDF']:before {
+	content: "pdf";
+	background-color: #d5233c;
+	}
+
+/* Presenations */
+a[href$='.ppt']:before,
+a[href$='.PPT']:before {
+	content: "ppt";
+	background-color: #d54a19;
+	}
+
+/* Flash */
+a[href$='.swf']:before,
+a[href$='.SWF']:before {
+	content: "swf";
+	background-color: #d41444;
+	}
+
+/*To do
+- Add support for
+  - open office formats
+  - iWork file formats
+  - feed files - rss opml etc
+- remove px measurements
+*/
