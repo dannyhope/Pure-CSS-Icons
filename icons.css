@@ -154,12 +154,3 @@ a[href$='.SWF']:before {
 	content: "swf";
 	background-color: #d41444;
 	}
-
-/*To do
-- Add support for
-  - open office formats
-  - iWork file formats
-  - feed files - rss opml etc
-  - open audio and video formats like ogg
-- remove px measurements
-*/
